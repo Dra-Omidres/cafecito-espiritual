@@ -1,8 +1,5 @@
 name: Devocional Short
 on:
-  push:
-    paths:
-      - '.github/workflows/short.yml'
   workflow_dispatch:
 permissions:
   contents: write
