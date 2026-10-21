@@ -1,8 +1,5 @@
 name: Render Short ligero
 on:
-  push:
-    paths:
-      - '.github/workflows/short-ligero.yml'
   workflow_dispatch:
 permissions:
   contents: write
