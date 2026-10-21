@@ -1,0 +1,24 @@
+name: Render Short ligero
+on:
+  push:
+    paths:
+      - '.github/workflows/short-ligero.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Renderizar video vertical
+        run: |
+          mkdir -p videos
+          ffmpeg -y -loop 1 -framerate 25 -i imagenes/oracion-2026-10-20.png -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -vf "scale=720:720,pad=720:1280:0:280:color=0xf8f5ee,fade=t=in:st=0:d=0.5,fade=t=out:st=11:d=1" -t 12 -r 25 -c:v libx264 -preset ultrafast -crf 30 -pix_fmt yuv420p -c:a aac -b:a 32k -shortest -movflags +faststart videos/oracion-papa-leon-xiv-short-2026-10-20.mp4
+      - name: Publicar MP4 en GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f videos/oracion-papa-leon-xiv-short-2026-10-20.mp4
+          git commit -m "Generar video MP4 devocional" || exit 0
+          git push
