@@ -1,0 +1,19 @@
+{
+  "id": "prueba-tecnica-multired-2026-10-20",
+  "imagen": "imagenes/oracion-2026-10-20.png",
+  "duracion": 12,
+  "audio": "",
+  "titulo": "Oración por el Papa León XIV | Cafecito Espiritual",
+  "referencia": "Santiago 5,14-15",
+  "publicar": false,
+  "nota": "PRUEBA INTERNA: este contenido ya fue publicado manualmente en YouTube; nunca duplicar",
+  "video": "videos/prueba-tecnica-multired-2026-10-20.mp4",
+  "estado_video": "renderizado",
+  "tipo": [
+    "youtube_short",
+    "instagram_story",
+    "facebook_story",
+    "instagram_reel",
+    "facebook_reel"
+  ]
+}
