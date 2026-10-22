@@ -1,0 +1,19 @@
+{
+  "id": "papa-leon-xiv-oracion-2026-10-22",
+  "imagen": "imagenes/oracion-papa-leon-xiv.png",
+  "duracion": 15,
+  "audio": "",
+  "licencia_audio": "",
+  "publicar": true,
+  "fecha": "2026-10-22",
+  "descripcion": "Oración diaria por la recuperación del Papa León XIV. Santiago 5,16. Santo Rosario todos los días 9:00 p. m. Ecuador.",
+  "video": "videos/papa-leon-xiv-oracion-2026-10-22.mp4",
+  "estado_video": "renderizado",
+  "tipo": [
+    "youtube_short",
+    "instagram_story",
+    "facebook_story",
+    "instagram_reel",
+    "facebook_reel"
+  ]
+}
